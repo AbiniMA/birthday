@@ -271,7 +271,7 @@
     <p class="login-hint">Enter your birthday date to unlock...</p>
 
     <input class="login-input" id="pwdInput" type="password"
-      placeholder="e.g. 21061999" maxlength="20" autocomplete="off"
+      placeholder="e.g. datemonthyear" maxlength="20" autocomplete="off"
       onkeydown="if(event.key==='Enter') checkPwd()"/>
 
     <button class="login-btn" onclick="checkPwd()">✦ &nbsp; Unlock &nbsp; ✦</button>
@@ -488,8 +488,8 @@
   makeParticles(document.getElementById('particles'),      blueShades);
 
   /* ── PASSWORD ── */
-  // Change 1999 to Biju's actual birth year!
-  const VALID = ['21061999','21/06/1999','21-06-1999','21.06.1999'];
+  // Change 1998 to Biju's actual birth year!
+  const VALID = ['21061998','21/06/1998','21-06-1998','21.06.1998'];
 
   function checkPwd() {
     const val = document.getElementById('pwdInput').value.trim();
